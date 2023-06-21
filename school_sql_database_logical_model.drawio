@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" modified="2023-06-21T15:56:38.103Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="78SvbEFASrlzesfG0Qev" version="21.5.0" type="github">
+  <diagram name="Strona-1" id="xf8WQ33KbrPWW2CgIPCL">
+    <mxGraphModel dx="1112" dy="1723" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-32" value="Student" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="60" y="-920" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-33" value="firstName (string)&lt;br&gt;lastName (string)&lt;br&gt;email (string)&lt;br&gt;dateRegistered (dateTime)" style="align=left;strokeColor=#666666;fillColor=#f5f5f5;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;fontColor=#333333;" vertex="1" parent="gSl7_R272K9YeQ3Hy5rI-32">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-34" value="Course" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="60" y="-690" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-35" value="title (string)&lt;br&gt;price (float)&lt;br&gt;instructor (string)&lt;br&gt;tags (string)" style="align=left;strokeColor=#666666;fillColor=#f5f5f5;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;fontColor=#333333;" vertex="1" parent="gSl7_R272K9YeQ3Hy5rI-34">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-38" value="Entollment" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="280" y="-830" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-39" value="date (dateTime)&lt;br&gt;price (float)" style="align=left;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="gSl7_R272K9YeQ3Hy5rI-38">
+          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-40" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gSl7_R272K9YeQ3Hy5rI-32">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250" y="-830" as="sourcePoint" />
+            <mxPoint x="280" y="-753" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gSl7_R272K9YeQ3Hy5rI-42" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gSl7_R272K9YeQ3Hy5rI-35" target="gSl7_R272K9YeQ3Hy5rI-39">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="670" y="-840" as="sourcePoint" />
+            <mxPoint x="490" y="-710" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="-840" />
+              <mxPoint x="530" y="-760" />
+              <mxPoint x="530" y="-730" />
+              <mxPoint x="680" y="-790" />
+              <mxPoint x="670" y="-790" />
+              <mxPoint x="490" y="-680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
